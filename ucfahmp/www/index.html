@@ -1,20 +1,19 @@
 <!doctype html>
 <!--
-  Code adapted from practical sessions of CEGEG077 2018.
   Material Design Lite
   Copyright 2015 Google Inc. All rights reserved.
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
+
       https://www.apache.org/licenses/LICENSE-2.0
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License
-  Colours form :
-  https://blog.jonathanangargentiero.com/material-desig-lite-color-classes-list/
- 
 -->
 <html lang="en">
   <head>
@@ -22,23 +21,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Question App</title>
+    <title>Material Design Lite</title>
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Material Design Lite">
     <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
+
     <link rel="shortcut icon" href="images/favicon.png">
+
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
@@ -57,7 +62,7 @@
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="demo-header mdl-layout__header mdl-color--teal-900 mdl-color-text--teal-300">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Home</span>
           <div class="mdl-layout-spacer"></div>
@@ -76,41 +81,45 @@
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
             <li class="mdl-menu__item">About</li>
             <li class="mdl-menu__item">Contact</li>
-            <li class="mdl-menu__item">Legal Information</li>
-            <li class="mdl-menu__item"><a href="userguide.html">User Guide</li>
+            <li class="mdl-menu__item">Legal information</li>
           </ul>
         </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--teal-900 mdl-color-text--teal-300">
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
           <img src="images/user.jpg" class="demo-avatar">
           <div class="demo-avatar-dropdown">
-            <span>Quiz App</span>
+            <span>hello@example.com</span>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
               <span class="visuallyhidden">Accounts</span>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-              <li class="mdl-menu__item">hello@Quiz.com</li>
-              <li class="mdl-menu__item">info@Quiz.com</li>
+              <li class="mdl-menu__item">hello@example.com</li>
+              <li class="mdl-menu__item">info@example.com</li>
               <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
             </ul>
           </div>
         </header>
-        <nav class="demo-navigation mdl-navigation mdl-color--teal-900">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">flag</i>Reset</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">forum</i>User Guide</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">people</i>Forums</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">flag</i>Updates</a>
-
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--teal-300 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <svg <html>
+
 <head>
   <!--the following links add the css and javascript required for the Leaflet Map -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
@@ -140,28 +149,6 @@
       maxZoom: 18,
       id: 'mapbox.streets'
     }).addTo(mymap);
-  // Points on the map
-  // Test Marker
-L.marker([51.527101, -0.210033]).addTo(mymap)
-.bindPopup("<b>Hello!</b><br />I am a Test Marker").openPopup();
-    // Question Marker 1
-L.marker([51.523815, -0.134173]).addTo(mymap)
-.bindPopup("<b>Question 1</b><br />In what year did Francis Galton, founder of UCL's Galton Laboratory, estimates the probability of two people having the same fingerprint? He went on to create a model of fingerprint analysis, leading to its use in forensic science. <br />a) 1777 <br />b) 1888 <br />c) 1999 <br />d) 2018 ").openPopup();
-    // Question Marker 2
-L.marker([51.524310, -0.134286]).addTo(mymap)
-.bindPopup("<b>Question 2</b><br />Who is the Chadwick building named after? <br />a) James Chadwick <br />b) Chadwich Boseman <br />c) Edwin Chadwick <br />d) Helen Chadwick ").openPopup();
-    // Question Marker 3
-L.marker([51.524588, -0.133842]).addTo(mymap)
-.bindPopup("<b>Question 3</b><br />In what famous film was the front quad used to as a model for ancient Rome? <br />a) Gladiator <br />b) Lego Movie <br />c) Horrible History <br />d) Pride and Prejudice ").openPopup();
-    // Question Marker 4
-L.marker([51.524085, -0.133175]).addTo(mymap)
-.bindPopup("<b>Question 4</b><br />How many people who are or were students or academics at UCL have been awarded Nobel Prizes?<br />a) 2 <br />b) 29 <br />c) 50 <br />d) 100 ").openPopup();
-    // Question Marker 5
-L.marker([51.523553, -0.132646]).addTo(mymap)
-.bindPopup("<b>Question 5</b><br />In what film what the Watson library used as “gotham print room”?  <br />a) Harry Potter <br />b)Lego Batman <br />c) Batman Begins <br />d) Star Wars ").openPopup();
-    // Question Marker 6
-L.marker([51.522819, -0.131855]).addTo(mymap)
-.bindPopup("<b>Question 6</b><br />In what year did UCL become the first university to teach women on equal terms with men? <br />a) 2018 <br />b) 1990 <br />c) 1880 <br />d) 1878 ").openPopup();
   </script>
 <script>
 //Custom Icons
@@ -191,111 +178,11 @@ mymap.on('click', onMapClick);
 </script>
 </script>
 </body>
-</html>
 
-            </svg>
-          </div>
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
           </div>
-          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__title mdl-card--expand mdl-color--amber-800">
-                <h2 class="mdl-card__title-text">Updates</h2>
-              </div>
-              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                No current updates
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-              </div>
-            </div>
-            <div class="demo-separator mdl-cell--1-col"></div>
-            <div class="demo-options mdl-card mdl-color--cyan-A700 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-              <div <h1> Location Quiz</h1>
-
-<h3> Question 1</h3>
-<div>
-
-<p>In what year did Francis Galton, founder of UCL's Galton Laboratory, estimates the probability of two people having the same fingerprint? He went on to create a model of fingerprint analysis, leading to its use in forensic science.</p>
-       1777 <input type="radio" name="amorpm" id="1777" /><br />
-       1888 <input type="radio" name="amorpm" id ="1888"/><br /> 
-       1999 <input type="radio" name="amorpm" id="1999" /><br />
-       2018 <input type="radio" name="amorpm" id ="2018"/><br />
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>
-<h3> Question 2</h3>
-<div>
-
-<p>Who is the Chadwick building named after?</p>
-       James Chadwick <input type="radio" name="amorpm" id="James Chadwick" /><br />
-       Chadwich Boseman <input type="radio" name="amorpm" id ="Chadwick Boseman"/><br /> 
-       Edwin Chadwick  <input type="radio" name="amorpm" id="Edwin Chadwick " /><br />
-       Helen Chadwick <input type="radio" name="amorpm" id ="Helen Chadwich"/><br />
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>
-<h3> Question 3</h3>
-<div>
-
-<p>In what famous film was the front quad used to as a model for ancient Rome? </p>
-       Gladiator <input type="radio" name="amorpm" id="Gladiator" /><br />
-       Lego Movie <input type="radio" name="amorpm" id ="Lego Movie"/><br /> 
-       Horrible History <input type="radio" name="amorpm" id="Horrible History" /><br />
-       Pride and Prejudice <input type="radio" name="amorpm" id ="Pride and Prejudice"/><br />
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>
-<h3> Question 4</h3>
-<div>
-
-<p>How many people who are or were students or academics at UCL have been awarded Nobel Prizes? </p>
-       2 <input type="radio" name="amorpm" id="2" /><br />
-       29 <input type="radio" name="amorpm" id ="29"/><br /> 
-       50 <input type="radio" name="amorpm" id="50" /><br />
-       100 <input type="radio" name="amorpm" id ="100"/><br />
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>
-<h3> Question 5</h3>
-<div>
-
-<p>In what film what the Watson library used as “gotham print room”? </p>
-       Harry Potter <input type="radio" name="amorpm" id="Harry Potter" /><br />
-       Lego Batman Movie <input type="radio" name="amorpm" id ="Lego Batman Movie"/><br /> 
-       Batman Begins <input type="radio" name="amorpm" id="Batman Begins" /><br />
-       Star Wars <input type="radio" name="amorpm" id ="Star Wars"/><br />
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>       
-<h3> Question 6</h3>
-<div>
-
-<p>In what year did UCL become the first university to teach women on equal terms with men?</p>
-       2018 <input type="radio" name="amorpm" id="2018" /><br />
-       1990 <input type="radio" name="amorpm" id ="1990"/><br /> 
-       1880 <input type="radio" name="amorpm" id="1880" /><br />
-       1878 <input type="radio" name="amorpm" id ="1878"/><br />
-       
-<button id="startUpload" onclick="startDataUpload()">Start Data Upload</button>
-<script src="./js/uploadData.js"></script>
-                
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Location</a>
-                <div class="mdl-layout-spacer"></div>
-                <i class="material-icons">location_on</i>
-              </div>
-              
-            </div>
-                        <div class="demo-separator mdl-cell--1-col"></div>
-            
-              <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-                
-          </div>
-        </div>
-      </main>
-    </div>
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
       </svg>
-
-      <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
-
